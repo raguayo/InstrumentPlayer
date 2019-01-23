@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+            http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+    
+    <bean id="guitar" class="com.aguayo.rick.Guitar" />
+    <bean id="piano" class="com.aguayo.rick.Piano" />
+    <bean id="bass" class="com.aguayo.rick.Bass" />
+    <bean id="drums" class="com.aguayo.rick.Drums" />
+    <bean id="trumpet" class="com.aguayo.rick.Trumpet" />
+    <bean id="saxophone" class="com.aguayo.rick.Saxophone" />
+
+    <bean id="musician" class="com.aguayo.rick.Musician">
+        <property name="instrument" ref="guitar" />
+    </bean>
+
+    <bean id="satchmo" class="com.aguayo.rick.Satchmo">
+        <constructor-arg name="instrument" ref="trumpet" />
+    </bean>
+
+</beans>
