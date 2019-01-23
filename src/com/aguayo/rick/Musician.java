@@ -9,7 +9,7 @@ public class Musician {
    
     public void setInstrument(Instrument instrument) {
         this.instrument = instrument;
-        System.out.println("Setter dependency injection complete.");
+        System.out.println("Musician setter dependency injection complete.");
     }
     
     public void playing() {

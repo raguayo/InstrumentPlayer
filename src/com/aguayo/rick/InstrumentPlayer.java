@@ -17,6 +17,8 @@ public class InstrumentPlayer {
         Musician musician = context.getBean("musician", Musician.class);
         musician.playing();
         Satchmo satchmo = context.getBean("satchmo", Satchmo.class);
+        System.out.println("Satchmo's full name: " + satchmo.getFirstName() + 
+                " " + satchmo.getLastName());
         satchmo.playing();
     }
     

@@ -16,6 +16,8 @@
     </bean>
 
     <bean id="satchmo" class="com.aguayo.rick.Satchmo">
+        <property name="firstName" value="Louis"/>
+        <property name="lastName" value="Armstrong" />
         <constructor-arg name="instrument" ref="trumpet" />
     </bean>
 
